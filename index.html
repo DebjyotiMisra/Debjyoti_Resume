@@ -15,27 +15,44 @@
   </div>
 
   <!-- Header -->
-  <header class="text-center py-10 bg-white shadow-md">
-    <h1 class="text-4xl font-bold">Debjyoti Misra</h1>
-    <p class="text-lg text-gray-600 mt-2">Associate Software Engineer</p>
-    <nav class="mt-4 space-x-6 text-blue-600 font-medium">
+  <!-- Header -->
+<!-- Header with Coding GIF Background -->
+<!-- Header with background GIF -->
+<header class="relative h-[400px] flex items-center justify-center text-center text-white overflow-hidden">
+  <!-- Background GIF -->
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXE2N254N2VvMDd4ZmllZDRnbnRvOGJob2VzcGl6dngwZHdnNDJxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8Am0UlfiwZcgEDOy4h/giphy.gif"
+       alt="Coding Background"
+       class="absolute inset-0 w-full h-full object-cover opacity-80 z-0" />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+  <!-- Header Content -->
+  <div class="relative z-20">
+    <h1 class="text-4xl md:text-5xl font-bold">Debjyoti Misra</h1>
+    <p class="text-lg md:text-xl text-gray-300 mt-2">Associate Software Engineer</p>
+    <nav class="mt-4 space-x-6 text-blue-200 font-medium">
       <a href="#about" class="hover:underline">About</a>
       <a href="#skills" class="hover:underline">Skills</a>
       <a href="#experience" class="hover:underline">Experience</a>
       <a href="#projects" class="hover:underline">Projects</a>
       <a href="#contact" class="hover:underline">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main class="max-w-4xl mx-auto px-4 py-10 space-y-20">
-    
+
+
+
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
     <!-- About -->
-    <section id="about">
-      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+    <section id="about" class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-b pb-2">About Me</h2>
       <div class="flex flex-col md:flex-row items-center gap-6">
         <img src="debjyoti.jpg" alt="Debjyoti Misra" class="w-40 h-40 rounded-full shadow-md object-cover">
         <div class="text-lg space-y-2">
-          <p>Dynamic Associate Software Engineer with a proven track record at Gazelle Information Technologies, specializing in digitization projects and supply chain dynamics. Excelled in developing, deploying, and optimizing the Trace-n-Track application, showcasing strong problem-solving skills and a positive attitude. Expert in Java technologies and proficient in technical support, demo</p>
+          <p>Dynamic Associate Software Engineer with a proven track record at Gazelle Information Technologies, specializing in digitization projects and supply chain dynamics...</p>
           <p><strong>Education:</strong> B.Tech in Computer Science and Engineering (2023), 85%</p>
           <p><strong>DOB:</strong> Apr 25, 2002 | <strong>Gender:</strong> Male</p>
         </div>
@@ -43,8 +60,8 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills">
-      <h2 class="text-3xl font-semibold mb-6">Technical Skills</h2>
+    <section id="skills" class="bg-blue-50 p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-b pb-2">Technical Skills</h2>
       <ul class="list-disc pl-6 space-y-2 text-lg">
         <li>Java, Spring MVC, Hibernate, JSP, SQL</li>
         <li>AJAX, JQuery, PostgreSQL, MySQL</li>
@@ -54,8 +71,8 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience">
-      <h2 class="text-3xl font-semibold mb-6">Work Experience</h2>
+    <section id="experience" class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-b pb-2">Work Experience</h2>
       <div class="space-y-4 text-lg">
         <div>
           <h3 class="font-bold">Gazelle Information Technologies (Feb 2023 – Present)</h3>
@@ -74,41 +91,23 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects">
-      <h2 class="text-3xl font-semibold mb-6">Projects</h2>
-      <div class="space-y-4 text-lg">
+    <section id="projects" class="bg-blue-50 p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-b pb-2">Projects</h2>
+      <div class="space-y-6 text-lg">
         <div>
           <h4 class="font-bold text-xl">Trace-n-Track (MMI & RMPM)</h4>
-          <p>This application is a Java-based solution designed for inventory and tracking management, extensively implemented throughout India with multinational organizations like Coca-Cola. <br>
-				• Developed and implemented a robust Java-based 
-				solution for inventory and tracking management, 
-				enabling real-time monitoring and management of 
-				stock, addressing the specific needs of 
-				businesses throughout India. 
-				<br>
-				• Designed and engineered the core architecture of 
-				the application, ensuring scalability, reliability, and 
-				optimal performance for handling extensive 
-				inventory data from receiving new stocks to 
-				issuing them. 
-				<br>
-				• Designed a robust solution for Issuance and 
-				Consumption of existing stocks and displaying 
-				the previous Consumption Reports in the system. 
-				<br>
-				• Integration of the Frontend, Backend and the 
-				Database.</p>
+          <p>This Java-based application enables real-time inventory and tracking across India, especially with companies like Coca-Cola...</p>
         </div>
         <div>
           <h4 class="font-bold text-xl">IPL Sports Analytics</h4>
-          <p>Performed analysis of IPL cricket data from 2008 to 2020 using data science techniques.</p>
+          <p>Analyzed IPL data from 2008–2020 using data science techniques to gain match and player insights.</p>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-      <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+    <section id="contact" class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-semibold mb-6 border-b pb-2">Contact</h2>
       <div class="space-y-2 text-lg">
         <p><strong>Email:</strong> <a href="mailto:rikumishradd@gmail.com" class="text-blue-600 hover:underline">rikumishradd@gmail.com</a></p>
         <p><strong>Phone:</strong> +91-8170967034</p>
