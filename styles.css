@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Ticker */
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffeb3b;
+  color: #000;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.ticker p {
+  display: inline-block;
+  animation: ticker-slide 15s linear infinite;
+  font-weight: bold;
+  padding-left: 100%;
+}
+
+@keyframes ticker-slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Header */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  margin: 5px 10px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Text Sizing */
+h1, h2, h3 {
+  word-break: break-word;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .ticker p {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffeb3b;
+  color: #000;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 5px 0; /* ↓ reduced padding to make it shorter */
+  font-size: 14px; /* ↓ smaller text for a sleeker ticker */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.ticker p {
+  display: inline-block;
+  animation: ticker-slide 15s linear infinite;
+  font-weight: bold;
+  padding-left: 100%;
+  margin: 0;
+}
+
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
