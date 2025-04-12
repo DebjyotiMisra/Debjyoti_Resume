@@ -4,46 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Debjyoti Misra | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="debjyoti.jpg" />
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
   <!-- Ticker -->
-  <div class="ticker">
-    <p>🎉 Thanks for visiting me. 🎉</p>
+  <div class="bg-blue-600 text-white text-center py-2 animate-pulse">
+    🎉 Thanks for visiting me. 🎉
   </div>
 
   <!-- Header -->
-  <header>
-    <h1>Debjyoti Misra</h1>
-    <p>Associate Software Engineer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <header class="text-center py-10 bg-white shadow-md">
+    <h1 class="text-4xl font-bold">Debjyoti Misra</h1>
+    <p class="text-lg text-gray-600 mt-2">Associate Software Engineer</p>
+    <nav class="mt-4 space-x-6 text-blue-600 font-medium">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#experience" class="hover:underline">Experience</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#contact" class="hover:underline">Contact</a>
     </nav>
   </header>
 
-  <!-- Main Sections -->
-  <main>
+  <main class="max-w-4xl mx-auto px-4 py-10 space-y-20">
+    
+    <!-- About -->
     <section id="about">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <img src="debjyoti.jpg" alt="Debjyoti Misra" class="profile-pic">
-    <div class="about-text">
-      <p>I’m Debjyoti Misra, a software engineer based in Kolkata. I specialize in Java development and digitization projects, especially in supply chain systems.</p>
-      <p><strong>Education:</strong> B.Tech in Computer Science and Engineering (2023), 85%</p>
-      <p><strong>DOB:</strong> Apr 25, 2002 | <strong>Gender:</strong> Male</p>
-    </div>
-  </div>
-</section>
+      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <img src="debjyoti.jpg" alt="Debjyoti Misra" class="w-40 h-40 rounded-full shadow-md object-cover">
+        <div class="text-lg space-y-2">
+          <p>I’m Debjyoti Misra, a software engineer based in Kolkata. I specialize in Java development and digitization projects, especially in supply chain systems.</p>
+          <p><strong>Education:</strong> B.Tech in Computer Science and Engineering (2023), 85%</p>
+          <p><strong>DOB:</strong> Apr 25, 2002 | <strong>Gender:</strong> Male</p>
+        </div>
+      </div>
+    </section>
 
-
+    <!-- Skills -->
     <section id="skills">
-      <h2>Technical Skills</h2>
-      <ul>
+      <h2 class="text-3xl font-semibold mb-6">Technical Skills</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg">
         <li>Java, Spring MVC, Hibernate, JSP, SQL</li>
         <li>AJAX, JQuery, PostgreSQL, MySQL</li>
         <li>Tools: Eclipse, IntelliJ, Postman, Git, SVN, MDM</li>
@@ -51,41 +53,58 @@
       </ul>
     </section>
 
+    <!-- Experience -->
     <section id="experience">
-      <h2>Work Experience</h2>
-      <h3>Gazelle Information Technologies (Feb 2023 – Present)</h3>
-      <ul>
-        <li>Worked on Trace-n-Track, MMI, RMPM & WMS digitization projects</li>
-        <li>Handled API development, testing, deployment, and support</li>
-      </ul>
-      <h3>PCS Global Pvt. Ltd. (Jul 2022 – Sep 2022)</h3>
-      <ul>
-        <li>Enhanced Java web applications and user interface performance</li>
-      </ul>
+      <h2 class="text-3xl font-semibold mb-6">Work Experience</h2>
+      <div class="space-y-4 text-lg">
+        <div>
+          <h3 class="font-bold">Gazelle Information Technologies (Feb 2023 – Present)</h3>
+          <ul class="list-disc pl-6">
+            <li>Worked on Trace-n-Track, MMI, RMPM & WMS digitization projects</li>
+            <li>Handled API development, testing, deployment, and support</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold">PCS Global Pvt. Ltd. (Jul 2022 – Sep 2022)</h3>
+          <ul class="list-disc pl-6">
+            <li>Enhanced Java web applications and user interface performance</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects">
-      <h2>Projects</h2>
-      <h4>Trace-n-Track (MMI & RMPM)</h4>
-      <p>Java-based inventory & tracking system implemented across India for clients like Coca-Cola.</p>
-      <h4>IPL Sports Analytics</h4>
-      <p>Performed analysis of IPL cricket data from 2008 to 2020 using data science techniques.</p>
+      <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+      <div class="space-y-4 text-lg">
+        <div>
+          <h4 class="font-bold text-xl">Trace-n-Track (MMI & RMPM)</h4>
+          <p>Java-based inventory & tracking system implemented across India for clients like Coca-Cola.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-xl">IPL Sports Analytics</h4>
+          <p>Performed analysis of IPL cricket data from 2008 to 2020 using data science techniques.</p>
+        </div>
+      </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> <a href="mailto:rikumishradd@gmail.com">rikumishradd@gmail.com</a></p>
-      <p><strong>Phone:</strong> +91-8170967034</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/DebjyotiMisra" target="_blank">DebjyotiMisra</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/debjyoti-misra" target="_blank">linkedin.com/in/debjyoti-misra</a></p>
+      <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+      <div class="space-y-2 text-lg">
+        <p><strong>Email:</strong> <a href="mailto:rikumishradd@gmail.com" class="text-blue-600 hover:underline">rikumishradd@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91-8170967034</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/DebjyotiMisra" target="_blank" class="text-blue-600 hover:underline">DebjyotiMisra</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/debjyoti-misra" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/debjyoti-misra</a></p>
+      </div>
     </section>
+
   </main>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Debjyoti Misra. All rights reserved.</p>
+  <footer class="text-center py-6 bg-gray-100 border-t mt-10 text-gray-500 text-sm">
+    &copy; 2025 Debjyoti Misra. All rights reserved.
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
